@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="test.js"></script>
+    
+</head>
+<body>
+    <div id="partie_solde">
+    <form id="affichesolde">
+        <label for="fsolde">solde</label>
+        <input type="text" id="fsolde" value="25"><br>
+
+        <!-- Utilisation de boutons de type button -->
+        <button type="button" id="depot">Deposer</button>
+        <button type="button" id="retrait">Retirer</button>
+    </form>
+    </div>
+    <div id="formulaire">
+        <form id="formtransaction">
+            
+            <label for="fname">Nom</label>
+            <input type="text" id="fname" name="fname"><br>
+    
+            <label for="fprenom">Prenom</label>
+            <input type="text" id="fprenom" name="fprenom"><br>
+    
+            <label for="fcarte">N Carte</label>
+            <input type="text" id="fcarte" name="fcarte"><br>
+    
+            <label for="fcrypto">Cryptogramme</label>
+            <input type="text" id="fcryptogramme" name="fcryptogramme"><br>
+    
+            <label for="fMontant">Montant</label>
+            <input type="number" id="fMontant" name="fMontant"><br>
+            
+            <!-- Utilisation de boutons de type button -->
+            <button type="button" id="somme">deposer</button>
+            <button type="button" id="soustraction">Retirer</button> 
+        </form>
+        
+    </div>
+    <script>
+        const solde=document.getElementById("partie_solde") ;
+        const form=document.getElementById("formulaire") ;
+        form.style.visibility = 'hidden'; // Cache le bouton
+        const deposer=document.getElementById("depot");
+        const retirer=document.getElementById("retrait");
+        const som=document.getElementById("somme");
+        const soust=document.getElementById("soustraction");
+        deposer.addEventListener('click',function(){
+            solde.style.visibility = 'hidden'; // Cache le bouton
+            form.style.visibility = 'visible'; // Affiche le bouton
+            
+            soust.style.visibility = 'hidden'; // Cache le bouton
+            
+            
+
+        })
+        som.addEventListener('click',addition);
+        retirer.addEventListener('click',function(){
+            solde.style.visibility = 'hidden'; // Cache le bouton
+            form.style.visibility = 'visible'; // Affiche le bouton
+
+            som.style.visibility = 'hidden'; // Cache le bouton
+            soust.addEventListener('click',soustraction);
+        })
+
+
+
+    </script>
+</body>
+</html>
