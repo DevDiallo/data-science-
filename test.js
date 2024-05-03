@@ -73,3 +73,8 @@ function soustraction(event, displayedNumberElement, montantElement) {
     displayedNumberElement.innerHTML = `Votre solde : ${newBalance.toFixed(2)}`;
     displayedNumberElement.style.visibility='visible';
 }
+document.getElementById('conexion').addEventListener('click', function(event) {
+    event.preventDefault(); // Empêche la navigation par défaut
+    console.log('Lien cliqué !');
+});
+

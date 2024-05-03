@@ -9,16 +9,17 @@
 
 div.center {
     /*background-color: #2E8B57;  Couleur d'arrière-plan plus sombre (vert forêt) */
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
+    /*width: 50%;*/
+    /*margin: 0 auto;*/
+    text-align:right;
     padding: 10px; /* Ajoute du rembourrage pour l'entête */
 }
 
 div.center a {
     /*color: #ADFF2F;  Couleur des liens (vert chartreuse) */
-    margin: 30px; /* Ajoute un espace entre les liens */
+    margin: 30px;  /*Ajoute un espace entre les liens */
     text-decoration: none; /* Retire le soulignement */
+    
 }
 
 
@@ -56,12 +57,12 @@ div.transact {
 .partie_solde {
   position: relative;
   background-color: #FFD700;
-  margin-top: 50px;
+  margin-top: 100px;
  
 }
 .affichesolde{
     margin-left: 785px;
-    margin-top: -150px;
+    margin-top: -200px;/* */
 }
 .transact {
   position: relative;
@@ -70,6 +71,19 @@ div.transact {
   font-size: 18px;
   margin-top: 50px;
   margin-left: 800px;
+}
+
+div.afficheText{
+    width: 600px; /* largeur du bloc */
+    height: 550px; /* hauteur du bloc */
+    overflow: hidden; /* cache le contenu débordant */
+    line-height: 3; /* espace entre les lignes */
+    text-overflow: ellipsis; /* ajoute des points de suspension si le texte dépasse la largeur du bloc */
+    display: -webkit-box; /* pour activer le comportement multi-lignes */
+    -webkit-line-clamp: 3; /* nombre maximum de lignes affichées */
+    -webkit-box-orient: vertical; /* orientation verticale du texte */
+    font-family: Arial, sans-serif; /* police de texte */
+    font-size: 25px; /* taille du texte */
 }
 
 
@@ -82,6 +96,10 @@ div.transact {
     <a class="propos" id="a propos" href="propos_link">a propos</a>
     <a class="historique" id="historique" href="historique_link">historique</a>
     
+    <a class="conexion" id="conexion" href="conexion_link.html" >connexion</a>
+    <a class="inscrir" id="inscrir" href="inscription_link.html">inscription </a>
+    
+    
 
 </div>
 <br>
@@ -90,20 +108,12 @@ div.transact {
     
     <div class="partie_solde" id="partie_solde">
         <div class="afficheText">
-            Bienvenue sur Transf'Express !
+            Bienvenue sur KBS_TRANSFERT !
     
-    Transf'Express, votre partenaire de confiance pour des transferts d'argent rapides, <br>
-    securises et abordables. Que vous envoyiez de l'argent a vos proches, a des amis ou a des partenaires commerciaux, <br>
+    KBS_TRANSFERT, votre partenaire de confiance pour des transferts d'argent rapides,
+    securises et abordables. Que vous envoyiez de l'argent a vos proches, a des amis ou a des partenaires commerciaux,
     nous sommes la pour vous accompagner a chaque etape.
-    Transf'Express, votre partenaire de confiance pour des transferts d'argent rapides, <br>
-    securises et abordables. Que vous envoyiez de l'argent a vos proches, a des amis ou a des partenaires commerciaux, <br>
-    nous sommes la pour vous accompagner a chaque etape.
-    Transf'Express, votre partenaire de confiance pour des transferts d'argent rapides, <br>
-    securises et abordables. Que vous envoyiez de l'argent a vos proches, a des amis ou a des partenaires commerciaux, <br>
-    nous sommes la pour vous accompagner a chaque etape.
-    Transf'Express, votre partenaire de confiance pour des transferts d'argent rapides, <br>
-    securises et abordables. Que vous envoyiez de l'argent a vos proches, a des amis ou a des partenaires commerciaux, <br>
-    nous sommes la pour vous accompagner a chaque etape.
+    
         </div>
     <form class="affichesolde" id="affichesolde">
         <label for="fsolde">solde</label>
